@@ -1,0 +1,12 @@
+server:
+  port: 4444
+kafka:
+  topic: demo
+spring:
+  application:
+    name: producer
+  kafka:
+    bootstrap-servers: localhost:29092,localhost:39092,localhost:49092
+  producer:
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
